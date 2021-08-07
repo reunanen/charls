@@ -101,6 +101,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
       <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>charls.def</ModuleDefinitionFile>
@@ -135,6 +136,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX64</TargetMachine>
