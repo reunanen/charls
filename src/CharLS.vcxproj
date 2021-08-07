@@ -64,21 +64,27 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|Win32'">
     <TargetName>charls-2-x86</TargetName>
+    <IncludePath>$(ProjectDir)../include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>charls-2-x86</TargetName>
+    <IncludePath>$(ProjectDir)../include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>charls-2-x86</TargetName>
+    <IncludePath>$(ProjectDir)../include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked|x64'">
     <TargetName>charls-2-x64</TargetName>
+    <IncludePath>$(ProjectDir)../include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>charls-2-x64</TargetName>
+    <IncludePath>$(ProjectDir)../include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>charls-2-x64</TargetName>
+    <IncludePath>$(ProjectDir)../include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -94,6 +100,7 @@
     <ClCompile>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>charls.def</ModuleDefinitionFile>
@@ -127,6 +134,7 @@
     <ClCompile>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SmallerTypeCheck>false</SmallerTypeCheck>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX64</TargetMachine>
